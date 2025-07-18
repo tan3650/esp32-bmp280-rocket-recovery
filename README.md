@@ -41,12 +41,11 @@ A basic rocket apogee detection and recovery algorithm using ESP32 and BMP280 pr
    - Once apogee is confirmed over a set duration, the ESP32 activates `presspin` and `ledpin` for 4 seconds to deploy the recovery system.
 
 # Parameters You Can Tune
-
-| Variable        |                Purpose                             |
-| constred = 65   | Number of readings to average                      |
-| a = 60          | Minimum pressure difference threshold              |
-| t = 30          | Number of confirmations before triggering recovery |
-
+| Variable | Purpose |
+|------------|-----------|
+| constred = 65       | Number of readings to average     |
+| a = 60        | Minimum pressure difference threshold       |
+| t = 30       | Number of confirmations before triggering recovery   |
 
 # Serial Output
 - Altitude readings are printed via 'Serial' at 115200 baud.
