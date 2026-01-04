@@ -57,7 +57,7 @@ void loop() {
    prevpress1 = bmp.readPressure();     //pressure will dec as going up therefore curpress2<prevpress2 therefore press_diff -ve asel 
    prevpress2 = bmp.readPressure();    
    for (int i = 0; i < constred; i++) 
-   {if(i%2==0)                                     // or i can just inc delay to 200???
+   {if(i%2==0)                                     
     {curpress1=bmp.readPressure();
     float pressure_diff1 = curpress1 - prevpress1;
     avg1 = avg1 + (pressure_diff1);
